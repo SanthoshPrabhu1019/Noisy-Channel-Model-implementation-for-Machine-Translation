@@ -66,9 +66,9 @@ An inference-time algorithm that:
 - Generates multiple candidate translations using beam search.
 - Computes a **combined score**:
   
-  \[
-  \text{Final Score} = \log P(y|x) + \alpha \times \left( \log P(x|y) + \log P(y) \right)
-  \]
+```
+   Final Score= log P(y|x) + alpha * (log P(x|y) + log P(y))
+```
 
 - Selects the candidate with the **highest combined score**.
 
@@ -164,6 +164,7 @@ This will start an interactive interface where you can:
 - Direct model performs particularly well across all sentence length categories
 
 ---
+
 
 
 ## 🔍 Justification of BLEU Score Results
